@@ -9,7 +9,7 @@ namespace SimplesConsumoAPI
 {
     public class MovieAPI
     {
-        public async Task<MovieModel> Integracao(string title)
+        public async Task<MovieModel> GetMovie(string title)
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync($"http://www.omdbapi.com/?apikey=931237d&t={title}");

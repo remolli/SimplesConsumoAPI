@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hXX+sbSKrRCBA2ujSTvtRS3zE46pF7BF44aFiKGngx0m749xB0tGSUPuRZuiqKGr2boE9LWC21WQNYAKAXtg8w==",
+  "dgSpecHash": "s+GIWlltf17MK9jPF42lu9EMDjWu79U+Dc6z7i7Wxpmsi18oMRuhQtMz6zCWbBwsldB6VP2X8IynVY9V73cOxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lia\\Desktop\\C#\\Testing\\SimplesConsumoAPI.csproj",
+  "projectFilePath": "C:\\Users\\lia\\Desktop\\C#\\SimplesConsumoAPI\\SimplesConsumoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

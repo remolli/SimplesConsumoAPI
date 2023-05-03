@@ -7,7 +7,7 @@ while (true)
     Console.Write("Digite um titulo de filme: ");
 
     var title = Console.ReadLine();
-    var movie = await movieAPI.Integracao(title);
+    var movie = await movieAPI.GetMovie(title);
 
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Magenta;

@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lia\\Desktop\\C#\\Testing\\SimplesConsumoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\lia\\Desktop\\C#\\SimplesConsumoAPI\\SimplesConsumoAPI.csproj",
       "projectName": "SimplesConsumoAPI",
-      "projectPath": "C:\\Users\\lia\\Desktop\\C#\\Testing\\SimplesConsumoAPI.csproj",
+      "projectPath": "C:\\Users\\lia\\Desktop\\C#\\SimplesConsumoAPI\\SimplesConsumoAPI.csproj",
       "packagesPath": "C:\\Users\\lia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lia\\Desktop\\C#\\Testing\\obj\\",
+      "outputPath": "C:\\Users\\lia\\Desktop\\C#\\SimplesConsumoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lia\\AppData\\Roaming\\NuGet\\NuGet.Config",

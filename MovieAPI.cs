@@ -9,9 +9,15 @@ namespace SimplesConsumoAPI
 {
     public class MovieAPI
     {
+        HttpClient httpClient;
+
+        public MovieAPI()
+        {
+            httpClient = new HttpClient();
+        }
+
         public async Task<MovieModel> GetMovie(string title)
         {
-            HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync($"http://www.omdbapi.com/?apikey=931237d&t={title}");
             var jsonString = await response.Content.ReadAsStringAsync();
 
@@ -22,7 +28,6 @@ namespace SimplesConsumoAPI
 
         public async Task<SearchResponseModel> GetSearchResponse(string search)
         {
-            HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync($"http://www.omdbapi.com/?apikey=931237d&s={search}");
             var jsonString = await response.Content.ReadAsStringAsync();
             

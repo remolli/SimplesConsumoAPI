@@ -8,9 +8,13 @@ namespace SimplesConsumoAPI
 {
     public class Views
     {
+        API api;
+        public Views()
+        {
+            api = new API();
+        }
         public async Task MovieView()
         {
-            API api = new API();
             while (true)
             {
                 Console.Write("Digite o título do filme: ");
@@ -51,7 +55,6 @@ namespace SimplesConsumoAPI
 
         public async Task SearchResponseView()
         {
-            API api = new API();
             while (true)
             {
                 Console.Write("Digite um título: ");

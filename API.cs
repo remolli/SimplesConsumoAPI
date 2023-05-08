@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SimplesConsumoAPI
 {
-    public class MovieAPI
+    public class API
     {
         HttpClient httpClient;
 
-        public MovieAPI()
+        public API()
         {
             httpClient = new HttpClient();
         }

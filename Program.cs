@@ -1,40 +1,31 @@
 ﻿using SimplesConsumoAPI;
 
-API api = new API();
+Views views = new Views();
 
-while (true)
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("Bem vindo ao SearchMovie console");
+Console.WriteLine();
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("O que você deseja pesquisar?");
+Console.WriteLine();
+Console.WriteLine("1 - Um filme em específico");
+Console.WriteLine("2 - Pesquisar filmes");
+Console.WriteLine();
+
+var escolha = Console.ReadLine();
+
+if (escolha == "1")
 {
-    Console.Write("Digite o título do filme: ");
-
-    var title = Console.ReadLine();
-    var movie = await api.GetMovie(title);
-
-    Console.WriteLine();
-
-    Console.ForegroundColor = ConsoleColor.Magenta;
-    Console.Write("Título: ");
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine(movie.Title);
-
-    Console.ForegroundColor = ConsoleColor.Magenta;
-    Console.Write("Descrição: ");
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine(movie.Plot);
-
-    Console.ForegroundColor = ConsoleColor.Magenta;
-    Console.Write("Released: ");
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine(movie.Year);
-
-    Console.ForegroundColor = ConsoleColor.Magenta;
-    Console.Write("Genre: ");
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine(movie.Genre);
-
-    Console.ForegroundColor = ConsoleColor.Magenta;
-    Console.Write("Starring: ");
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine(movie.Actors);
-
-    Console.ResetColor();
+    Console.Clear();
+    views.MovieView();
+}
+else if(escolha == "2") 
+{
+    Console.Clear();
+    views.SearchResponseView();
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("Escreva corretamente!");
 }

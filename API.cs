@@ -30,7 +30,7 @@ namespace SimplesConsumoAPI
         {
             var response = await httpClient.GetAsync($"http://www.omdbapi.com/?apikey=931237d&s={search}");
             var jsonString = await response.Content.ReadAsStringAsync();
-            
+
             SearchResponseModel searchResponse = JsonConvert.DeserializeObject<SearchResponseModel>(jsonString);
 
             return searchResponse;

@@ -34,6 +34,7 @@ else if (escolha == "2")
 
     while (true)
     {
+        Console.WriteLine();
         Console.Write("Digite um título: ");
 
         var title = Console.ReadLine();

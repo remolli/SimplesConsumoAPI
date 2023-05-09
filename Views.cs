@@ -37,6 +37,11 @@ namespace SimplesConsumoAPI
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(movie.Actors);
 
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("Poster: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(movie.Poster);
+
             Console.ResetColor();
         }
 

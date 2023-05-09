@@ -47,28 +47,31 @@ namespace SimplesConsumoAPI
 
         public static void SearchResponseView(SearchResponseModel searchResponse)
         {
-            foreach (var movie in searchResponse.Search)
+            if (searchResponse.Search != null)
             {
-                Console.WriteLine();
+                foreach (var movie in searchResponse.Search)
+                {
+                    Console.WriteLine();
 
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.Write("Título: ");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(movie.Title);
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Título: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(movie.Title);
 
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.Write("Lançado em ");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(movie.Year);
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Lançado em ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(movie.Year);
 
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.Write("Tipo: ");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(movie.Type);
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Tipo: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(movie.Type);
 
-                Console.ResetColor();
-                Console.WriteLine();
-                Console.WriteLine(new string('-', 20));
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    Console.WriteLine(new string('-', 20));
+                }
             }
 
             Console.ForegroundColor = ConsoleColor.Magenta;

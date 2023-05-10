@@ -2,9 +2,11 @@
 
 API api = new API();
 
+Console.Write("Bem vindo ao ");
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine("Bem vindo ao SearchMovie console");
+Console.Write("SearchMovie");
 Console.ResetColor();
+Console.Write(" console");
 Console.WriteLine();
 Console.WriteLine("O que você deseja pesquisar?");
 Console.WriteLine();
@@ -21,9 +23,12 @@ if (escolha == "1")
     while (true)
     {
         Console.WriteLine();
-        Console.Write("Digite o título do filme: ");
+        Console.Write(" > Digite o título do filme: ");
 
+        Console.ForegroundColor = ConsoleColor.Yellow;
         var title = Console.ReadLine();
+        Console.ResetColor();
+
         var movie = await api.GetMovie(title);
         Views.MovieView(movie);
     }
@@ -35,9 +40,12 @@ else if (escolha == "2")
     while (true)
     {
         Console.WriteLine();
-        Console.Write("Digite um título: ");
+        Console.Write(" > Digite um título: ");
 
+        Console.ForegroundColor = ConsoleColor.Yellow;
         var title = Console.ReadLine();
+        Console.ResetColor();
+
         var searchResponse = await api.GetSearchResponse(title);
         Views.SearchResponseView(searchResponse);
     }
